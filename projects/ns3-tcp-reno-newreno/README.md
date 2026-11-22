@@ -30,8 +30,4 @@ cp tcp-cwnd.cc scratch/
 ## Files
 | File | Description |
 |---|---|
-| `tcp-cwnd.cc` | ns-3 simulation program *(add from the course submission)* |
-| `make_figures.py` | Plot script *(add from the course submission)* |
-| `images/` | cwnd and throughput figures |
-
-> **Before publishing:** copy `tcp-cwnd.cc`, `make_figures.py` and the figures (`fig1_part1_cwnd.png`, `fig2_part2_overlay.png`, `fig3_part3_cwnd.png`, `fig4_part3_throughput_delay.png`) from the course submission into this folder. Delete this note afterwards.
+| Simulation program and plot script | Submitted with the CPSC 4317 course report |
