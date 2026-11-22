@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zaid Awadallah — Software &amp; IT Systems | Portfolio</title>
+  <meta name="description" content="Portfolio of Zaid Awadallah, B.S. Computer Information Sciences (Lamar University, Dec 2026): projects, resume, skills and contact.">
+  <meta property="og:title" content="Zaid Awadallah — Portfolio">
+  <meta property="og:description" content="Software, IT systems and AI-assisted development. Projects, resume and contact.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#home">Zaid Awadallah</a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Open menu">☰</button>
+      <nav id="menu" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#career">Career</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="wrap hero-inner">
+        <img class="photo" src="assets/img/profile.jpg" alt="Portrait of Zaid Awadallah" width="220" height="220"
+             onerror="this.onerror=null;this.src='assets/img/profile.svg'">
+        <div>
+          <p class="eyebrow">Hello, I'm</p>
+          <h1>Zaid Awadallah</h1>
+          <p class="role">B.S. Computer Information Sciences · Lamar University</p>
+          <p class="role strong">Software Developer · IT &amp; Network Systems · AI-Assisted Development</p>
+          <p class="lede">I build practical software for real operating problems — and I run a business, so I know what the problems are.</p>
+          <div class="cta">
+            <a class="btn primary" href="resume/resume.pdf" download>Download Resume</a>
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn" href="projects/swift-dispatch-ai/">Try the AI Demo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="wrap narrow">
+        <h2>About Me</h2>
+        <p>I am a senior at Lamar University in Beaumont, Texas, completing a <strong>Bachelor of Science in Computer Information Sciences</strong>, with graduation expected in <strong>December 2026</strong>. My coursework has given me a foundation in programming, discrete mathematics and computer networking. In Computer Networks I worked on a team that used the ns-3 simulator to compare TCP Reno and NewReno congestion control, which taught me how much careful experiment design matters when you want numbers you can trust.</p>
+        <p>Outside the classroom I co-founded <strong>Swift Towing and Recovery</strong>, a towing and roadside-assistance company in Rosharon, south of Houston, in March 2026. Running it means handling dispatch, pricing, customer communication, phone systems and online advertising myself. It is also where most of my software ideas come from. My AI project, Swift Dispatch AI, exists because late-night customer texts are short and messy, and a dispatcher has to re-ask the same questions every time.</p>
+        <p>My technical interests are <strong>applied AI</strong>, <strong>networking and systems</strong>, and <strong>automation that saves people time</strong>. I enjoy taking something apart to see how it works, whether that is a TCP trace, a desktop PC I built and upgraded, or the engine of a vehicle I am repairing to resell. I also build analysis tools for my own futures-trading research, which has taught me to test ideas with data before trusting them.</p>
+        <p>My career goal is an <strong>entry-level software developer, IT support or systems/network administrator</strong> role in the Houston area, where I can grow into a developer who builds reliable tools for operations teams. Over the next year I plan to earn the CompTIA Network+ and AWS Cloud Practitioner certifications, strengthen my SQL and cloud skills, and keep shipping small, well-tested projects that solve real problems.</p>
+        <ul class="facts">
+          <li><span>Degree</span>B.S. Computer Information Sciences</li>
+          <li><span>School</span>Lamar University, Beaumont, TX</li>
+          <li><span>Graduation</span>December 2026</li>
+          <li><span>Location</span>Houston area (Rosharon, TX)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="section alt">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Resume</h2>
+          <div class="cta">
+            <a class="btn primary" href="resume/resume.pdf" download>Download PDF</a>
+            <a class="btn" href="resume/resume.html" target="_blank" rel="noopener">Open full page</a>
+          </div>
+        </div>
+        <div class="resume-frame">
+          <iframe src="resume/resume.html" title="Embedded resume of Zaid Awadallah"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="wrap">
+        <h2>Projects</h2>
+        <div class="projects">
+
+          <article class="project">
+            <img src="screenshots/swift-dispatch-ai.png" alt="Swift Dispatch AI showing a dispatch ticket, estimate and SMS reply">
+            <div class="project-body">
+              <p class="kind">Project 1 · AI Assistant Project</p>
+              <h3>Swift Dispatch AI</h3>
+              <p>A tow-request intake assistant. Paste a customer's text or voicemail and it returns a structured dispatch ticket (service, vehicle, pickup, drop-off, urgency and safety flags), an itemized estimate and a ready-to-send SMS reply. Claude extracts the facts through a forced tool call with a JSON schema; a separate, tested pricing engine calculates the quote so the AI can never invent a price. An offline rule-based engine provides a no-key demo and an automatic fallback.</p>
+              <ul class="tags"><li>JavaScript</li><li>Claude API</li><li>Structured output</li><li>Node.js tests</li><li>GitHub Pages</li></ul>
+              <div class="links">
+                <a class="btn primary small" href="projects/swift-dispatch-ai/">Live demo</a>
+                <a class="btn small" href="https://github.com/zaidawadallah/github-portfolio/tree/main/projects/swift-dispatch-ai">GitHub</a>
+                <a class="btn small" href="docs/AI_Project_Documentation.pdf">Documentation</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <img src="projects/ns3-tcp-reno-newreno/images/fig2_part2_overlay.png" alt="Congestion window over time for TCP Reno and NewReno"
+                 onerror="this.onerror=null;this.src='screenshots/ns3-project-card.svg'">
+            <div class="project-body">
+              <p class="kind">Project 2 · Course Project (CPSC 4317 Computer Networks)</p>
+              <h3>TCP Reno vs NewReno in ns-3</h3>
+              <p>A three-person team project using the ns-3 network simulator. We traced the TCP congestion window over a bottleneck link, compared Reno with NewReno (about 9.45 vs 9.92 Mbps) and measured how bottleneck buffer size affects throughput and queuing delay. I found that two experiments used different SACK settings, which made Reno look far worse than it was, and re-ran every case under identical settings.</p>
+              <ul class="tags"><li>C++</li><li>ns-3</li><li>Python</li><li>matplotlib</li><li>Ubuntu Linux</li></ul>
+              <div class="links">
+                <a class="btn small" href="https://github.com/zaidawadallah/github-portfolio/tree/main/projects/ns3-tcp-reno-newreno">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <img src="screenshots/orb-equity-curve.png" alt="Equity curves comparing breakout and fade strategies">
+            <div class="project-body">
+              <p class="kind">Project 3 · Personal Project</p>
+              <h3>ORB Backtest Analyzer</h3>
+              <p>A Python command-line tool that compares variants of an opening-range-breakout futures strategy from a trade log. It reports win rate, the breakeven win rate implied by average win and loss, expectancy per trade, profit factor, max drawdown and a weekday split, and it warns when the sample is too small to trust. It replaced a spreadsheet where I kept making arithmetic mistakes.</p>
+              <ul class="tags"><li>Python</li><li>argparse</li><li>dataclasses</li><li>matplotlib</li><li>unittest</li></ul>
+              <div class="links">
+                <a class="btn small" href="https://github.com/zaidawadallah/github-portfolio/tree/main/projects/orb-backtest-analyzer">GitHub</a>
+                <a class="btn small" href="projects/orb-backtest-analyzer/sample_report.md">Sample report</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="wrap">
+        <h2>Skills</h2>
+        <p class="legend"><span class="dot used"></span> Used in my projects <span class="dot learn"></span> Currently learning</p>
+        <div class="skills">
+          <div class="skill-card">
+            <h3>Programming</h3>
+            <ul><li class="used">JavaScript</li><li class="used">Python</li><li class="used">C++</li><li class="used">HTML5 / CSS3</li><li class="learn">Java</li></ul>
+          </div>
+          <div class="skill-card">
+            <h3>Systems &amp; Networking</h3>
+            <ul><li class="used">Linux (Ubuntu)</li><li class="used">Windows 10/11</li><li class="used">TCP/IP &amp; ns-3</li><li class="used">VoIP / business phone systems</li><li class="used">PC hardware</li><li class="learn">Docker</li></ul>
+          </div>
+          <div class="skill-card">
+            <h3>Databases</h3>
+            <ul><li class="learn">SQL fundamentals</li><li class="learn">MySQL</li><li class="learn">PostgreSQL</li></ul>
+          </div>
+          <div class="skill-card">
+            <h3>Cloud</h3>
+            <ul><li class="used">GitHub Pages</li><li class="used">GitHub Codespaces</li><li class="learn">AWS (Cloud Practitioner)</li><li class="learn">Azure</li></ul>
+          </div>
+          <div class="skill-card">
+            <h3>AI Tools</h3>
+            <ul><li class="used">Claude</li><li class="used">Claude API (tool use)</li><li class="used">ChatGPT</li><li class="learn">GitHub Copilot</li></ul>
+          </div>
+          <div class="skill-card">
+            <h3>Dev Practices</h3>
+            <ul><li class="used">Git &amp; GitHub</li><li class="used">Unit testing</li><li class="used">Technical documentation</li><li class="used">Prompt engineering</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAREER -->
+    <section id="career" class="section">
+      <div class="wrap">
+        <h2>Career Readiness</h2>
+        <div class="docs">
+          <a class="doc" href="docs/Job_Search_Analysis.pdf"><strong>Job Search Analysis</strong><span>Houston-area entry-level roles, requirements and salaries, and my target list.</span></a>
+          <a class="doc" href="docs/Skills_Gap_Analysis.pdf"><strong>Skills Gap Analysis</strong><span>What employers ask for, what I have, and my 6-month plan to close the gaps.</span></a>
+          <a class="doc" href="docs/AI_Prompt_Log.pdf"><strong>AI Prompt Log</strong><span>How I used AI to build Swift Dispatch AI, and what I changed.</span></a>
+          <a class="doc" href="docs/AI_Project_Documentation.pdf"><strong>AI Project Documentation</strong><span>Architecture, design decisions, testing and limitations.</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="wrap narrow">
+        <h2>Contact</h2>
+        <p>I'm available for entry-level software, IT support and systems roles starting January 2027.</p>
+        <ul class="contact-list">
+          <li><span>Email</span><a href="mailto:zawadallah@lamar.edu">zawadallah@lamar.edu</a></li>
+          <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/zaid-awad-39a4652b5/" target="_blank" rel="noopener">https://www.linkedin.com/in/zaid-awad-39a4652b5/</a></li>
+          <li><span>GitHub</span><a href="https://github.com/zaidawadallah" target="_blank" rel="noopener">github.com/zaidawadallah</a></li>
+          <li><span>Phone</span><a href="tel:+13462649646">346-264-9646</a></li>
+        </ul>
+        <form id="contact-form" class="form" novalidate>
+          <label>Name <input name="name" required autocomplete="name"></label>
+          <label>Your email <input name="email" type="email" required autocomplete="email"></label>
+          <label>Message <textarea name="message" rows="4" required></textarea></label>
+          <button class="btn primary" type="submit">Send message</button>
+          <p class="form-note" role="status" aria-live="polite">Opens your email app with the message filled in.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">© <span id="year">2026</span> Zaid Awadallah · Built with HTML, CSS and JavaScript on GitHub Pages · <a href="#top">Back to top</a></div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

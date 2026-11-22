@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zaid Awadallah — Resume</title>
+<style>
+  @page { size: Letter; margin: 0.5in 0.55in; }
+  * { box-sizing: border-box; }
+  body { font-family: "Calibri", "Carlito", "Segoe UI", Arial, sans-serif; font-size: 10.6pt; line-height: 1.3; color: #111; margin: 0; }
+  .page { max-width: 7.4in; margin: 0 auto; }
+  @media screen { body { background: #fff; padding: 1rem; } }
+  h1 { font-size: 21pt; margin: 0; letter-spacing: .5px; text-align: center; }
+  .title { text-align: center; font-size: 10.8pt; color: #333; margin: 1px 0 3px; }
+  .contact { text-align: center; font-size: 9.8pt; margin-bottom: 6px; }
+  .contact a { color: #0b4f8a; text-decoration: none; }
+  h2 { font-size: 11pt; text-transform: uppercase; letter-spacing: 1px; color: #0b3a66; border-bottom: 1.2px solid #0b3a66; margin: 9px 0 4px; padding-bottom: 1px; }
+  .row { display: flex; justify-content: space-between; gap: 8px; }
+  .row b { font-weight: 700; }
+  .sub { font-style: italic; }
+  ul { margin: 2px 0 4px 16px; padding: 0; }
+  li { margin: 1px 0; }
+  p { margin: 2px 0; }
+  .skills p { margin: 1px 0; }
+  .muted { color: #444; }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>ZAID AWADALLAH</h1>
+  <div class="title">B.S. Computer Information Sciences · Software &amp; IT Systems · AI-Assisted Development</div>
+  <div class="contact">
+    Rosharon, TX · 346-264-9646 · <a href="mailto:zawadallah@lamar.edu">zawadallah@lamar.edu</a> ·
+    <a href="https://www.linkedin.com/in/zaid-awad-39a4652b5/">LinkedIn</a> ·
+    <a href="https://zaidawadallah.github.io/github-portfolio/">zaidawadallah.github.io/github-portfolio</a>
+  </div>
+
+  <h2>Summary</h2>
+  <p>CIS graduate and small-business founder who builds practical, tested software with JavaScript, Python and the Claude API. Seeking an entry-level software developer, IT support or systems/network role in Houston.</p>
+
+  <h2>Education</h2>
+  <div class="row"><span><b>Lamar University</b>, Beaumont, TX — B.S. Computer Information Sciences</span><span>Expected December 2026</span></div>
+  <p><span class="sub">Relevant coursework:</span> Computer Networks, Discrete Structures, Senior Seminar</p>
+
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <p><b>Programming:</b> JavaScript (ES modules), Python, C++, HTML5, CSS3</p>
+    <p><b>Systems &amp; Networking:</b> Linux (Ubuntu), Windows 10/11, TCP/IP, congestion control, ns-3 simulator, VoIP, PC hardware build and upgrade</p>
+    <p><b>Tools:</b> Git, GitHub, GitHub Pages, GitHub Codespaces, VS Code, Node.js, matplotlib, unit testing</p>
+    <p><b>AI Tools:</b> Claude, Claude API (tool use / structured output), ChatGPT, prompt engineering</p>
+  </div>
+
+  <h2>Projects</h2>
+  <div class="row"><span><b>Swift Dispatch AI</b> — AI tow-request intake assistant · <span class="muted">JavaScript, Claude API, Node.js</span></span><span>Nov 2026</span></div>
+  <ul>
+    <li>Built and deployed a web app that turns a customer's free-text message into a dispatch ticket, itemized quote and SMS reply.</li>
+    <li>Forced structured output with Claude tool use and a JSON schema; kept pricing in a deterministic engine so the AI cannot invent prices.</li>
+    <li>Added an offline rule-based fallback engine and 13 unit tests covering parsing, safety flags and pricing.</li>
+  </ul>
+  <div class="row"><span><b>TCP Reno vs NewReno in ns-3</b> — Computer Networks team project · <span class="muted">C++, Python, Linux</span></span><span>Nov 2026</span></div>
+  <ul>
+    <li>Simulated TCP congestion control over a bottleneck link; traced cwnd and measured throughput (NewReno ≈9.92 vs Reno ≈9.45 Mbps).</li>
+    <li>Found an inconsistent SACK setting that skewed Reno's results and re-ran all cases under identical settings.</li>
+  </ul>
+  <div class="row"><span><b>ORB Backtest Analyzer</b> — trading strategy analysis CLI · <span class="muted">Python, matplotlib</span></span><span>Nov 2026</span></div>
+  <ul>
+    <li>CLI that computes win rate, breakeven rate, expectancy, profit factor and drawdown from a trade log; 7 unit tests.</li>
+  </ul>
+
+  <h2>Experience</h2>
+  <div class="row"><span><b>Owner &amp; Operator</b>, Swift Towing and Recovery — Rosharon, TX</span><span>March 2026 – Present</span></div>
+  <ul>
+    <li>Co-founded and run a towing and roadside company in south Houston; handle dispatch, customer service, pricing and operations.</li>
+    <li>Set up the lead pipeline (Google Business Profile, Local Services Ads) and VoIP business lines; diagnosed a carrier spam filter blocking forwarded calls.</li>
+    <li>Planned a second location: licensing, insurance, phone setup and entity structure.</li>
+  </ul>
+  <div class="row"><span><b>Independent Vehicle Reseller</b> — Houston area</span><span>2026 – Present</span></div>
+  <ul>
+    <li>Buy, diagnose, repair and resell used vehicles; sold each completed vehicle at a profit and disclose known mechanical issues to buyers.</li>
+  </ul>
+
+  <h2>Certifications</h2>
+  <p>CompTIA Network+ — planned, target Spring 2027 · AWS Certified Cloud Practitioner — planned, target Summer 2027</p>
+
+  <h2>Activities</h2>
+  <ul>
+    <li>Futures trading research: built and backtested an ES strategy; passed a prop-firm evaluation (Nov 2026).</li>
+    <li>Home lab: build and upgrade a custom Windows desktop (AMD Ryzen / AM4).</li>
+  </ul>
+</div>
+</body>
+</html>

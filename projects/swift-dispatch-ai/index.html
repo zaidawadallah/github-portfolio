@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Swift Dispatch AI — Tow Request Intake Assistant</title>
+  <meta name="description" content="AI assistant that turns a customer's tow or roadside message into a structured dispatch ticket, quote and reply.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="back" href="../../index.html#projects">← Portfolio</a>
+      <h1>Swift Dispatch AI</h1>
+      <p class="tag">Paste a customer's text or voicemail. Get a dispatch ticket, a price estimate and a reply in seconds.</p>
+    </div>
+  </header>
+
+  <main class="wrap grid">
+    <section class="card" aria-labelledby="in-h">
+      <h2 id="in-h">1. Customer message</h2>
+      <label for="msg" class="sr">Customer message</label>
+      <textarea id="msg" rows="7" placeholder="e.g. My 2015 Ford F-150 won't start, I'm on the shoulder of 288 near the Manvel exit. Need a tow to my house in Pearland, about 12 miles. 281-555-0147"></textarea>
+
+      <div class="samples" role="group" aria-label="Sample messages">
+        <span>Try a sample:</span>
+        <button type="button" data-sample="0">Highway breakdown</button>
+        <button type="button" data-sample="1">Lockout</button>
+        <button type="button" data-sample="2">Stuck in mud</button>
+        <button type="button" data-sample="3">Accident</button>
+      </div>
+
+      <fieldset class="engine">
+        <legend>Engine</legend>
+        <label><input type="radio" name="engine" value="offline" checked> Offline demo (no key, rule-based)</label>
+        <label><input type="radio" name="engine" value="claude"> Claude AI (your API key)</label>
+        <div id="keyRow" class="keyrow" hidden>
+          <label for="apiKey">Anthropic API key</label>
+          <input id="apiKey" type="password" autocomplete="off" placeholder="sk-ant-...">
+          <label for="model">Model</label>
+          <input id="model" type="text" value="claude-sonnet-5-5">
+          <p class="note">The key stays in this page's memory and is sent only to api.anthropic.com. It is cleared when you close the tab.</p>
+        </div>
+      </fieldset>
+
+      <button id="run" class="primary" type="button">Create dispatch ticket</button>
+      <p id="status" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="card" aria-labelledby="out-h">
+      <h2 id="out-h">2. Dispatch ticket</h2>
+      <div id="ticket" class="empty">Your ticket will appear here.</div>
+
+      <h2>3. Estimate</h2>
+      <div id="quote" class="empty">—</div>
+
+      <h2>4. Reply to customer</h2>
+      <textarea id="reply" rows="5" readonly aria-label="Draft reply"></textarea>
+      <button id="copy" type="button" class="ghost">Copy reply</button>
+
+      <details>
+        <summary>Raw JSON</summary>
+        <pre id="json"></pre>
+      </details>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    Built by Zaid Awadallah · COSC 4272 AI-Assisted Software Project · Sample demo rates, not a price list.
+    · <a href="https://github.com/zaidawadallah/github-portfolio/tree/main/projects/swift-dispatch-ai">Source on GitHub</a>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
